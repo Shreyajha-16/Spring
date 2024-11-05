@@ -5,7 +5,9 @@ This code is an example of using Spring's Dependency Injection (DI) framework to
 The code demonstrates how to use Spring to:
 
 Define a simple Java class (Student) with properties like name, rollno, and email.
+
 Configure and initialize instances of this class (called "beans") in an external XML configuration file (applicationContext.xml).
+
 Use the main application code (Main.java) to retrieve and work with these beans created by Spring.
 ## Key Components and Their Roles
 ## Student.java Class:
