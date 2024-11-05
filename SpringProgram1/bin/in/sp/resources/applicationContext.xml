@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Defining a bean for a Student object with id 'stdId' -->
+    <bean class="in.sp.beans.Student" id="stdId">
+        <!-- Setting properties for the Student bean -->
+        <property name="name" value="Shreya"></property>
+        <property name="rollno" value="10"/>
+        <property name="email" value="shreya@gmail.com"/>
+    </bean>
+    
+    <!-- Defining a second bean for another Student object with id 'stdId2' -->
+    <bean class="in.sp.beans.Student" id="stdId2">
+        <!-- Setting different properties for this Student bean -->
+        <property name="name" value="Shrey"></property>
+        <property name="rollno" value="11"/>
+        <property name="email" value="shrey@gmail.com"/>
+    </bean>
+
+</beans>
+<!-- Explanation of applicationContext.xml
+Bean Definitions: A bean is an object that Spring manages. Here, we define two Student beans (stdId and stdId2) with unique property values.
+Properties: The <property> elements set initial values for the name, rollno, and email properties of each Student bean. These values are injected into the Student objects when they are created.-->
